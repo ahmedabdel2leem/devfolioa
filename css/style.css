@@ -1,0 +1,97 @@
+/* navbar */
+.navbar{
+    padding: 20px 0;
+    background-color: black;
+    position:fixed;
+    width:100%
+}
+.animation,.navbar-brand{
+    color: #fff;
+}
+
+.navbar-brand{
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.navbar-brand:hover{
+    color: #fff;
+}
+.f-drop:hover>.dropdown-menu {
+    display: block !important;
+
+}
+
+.navbar-expand-lg .navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item>.nav-link {
+    text-transform: uppercase;
+    font-weight: bolder;
+    position: relative;
+    padding-inline: 1em  !important;
+    /* color: #fff; */
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.nested-menu a[role=button] {
+    color: black;
+    font-size: 1rem;
+    font-weight: unset;
+    text-transform: none;
+    padding: 0.25rem 1rem !important;
+
+}
+
+.nested-menu>.dropdown-menu {
+    right: 90%;
+    display: block;
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: all .5s;
+}
+
+.nested-menu:hover>.dropdown-menu {
+    right: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.animation:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0px;
+    background-color: #fff;
+    transition: all .4s;
+}
+.animation:hover::before, .animation:active::before,.animation:focus::before{
+    width: 75%;
+}
+
+/* hero section */
+#hero{
+    height: 100vh;
+    background-image: url('/images/hero-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0 !important;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.452);
+    height: 100%;
+}
+.hero-des{
+
+}
+
