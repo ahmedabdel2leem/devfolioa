@@ -1,24 +1,29 @@
 /* navbar */
-.navbar{
+.navbar {
     padding: 20px 0;
     background-color: black;
-    position:fixed;
-    width:100%
+    position: fixed;
+    width: 100%
 }
-.animation,.navbar-brand{
+
+.animation,
+.navbar-brand {
     color: #fff;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-size: 28px;
     margin: 0;
     padding: 0;
     font-weight: 600;
     letter-spacing: 1px;
 }
-.navbar-brand:hover{
+
+.navbar-brand:hover,
+.nav-link:hover {
     color: #fff;
 }
+
 .f-drop:hover>.dropdown-menu {
     display: block !important;
 
@@ -32,13 +37,10 @@
     text-transform: uppercase;
     font-weight: bolder;
     position: relative;
-    padding-inline: 1em  !important;
+    padding-inline: 1em !important;
     /* color: #fff; */
 }
 
-.nav-link:hover {
-    color: #fff;
-}
 
 .nested-menu a[role=button] {
     color: black;
@@ -74,12 +76,15 @@
     background-color: #fff;
     transition: all .4s;
 }
-.animation:hover::before, .animation:active::before,.animation:focus::before{
+
+.animation:hover::before,
+.animation:active::before,
+.animation:focus::before {
     width: 75%;
 }
 
 /* hero section */
-#hero{
+#hero {
     height: 100vh;
     background-image: url('/images/hero-bg.jpg');
     background-position: center center;
@@ -87,11 +92,29 @@
     background-attachment: fixed;
     padding: 0 !important;
 }
-.overlay{
+
+.overlay {
     background-color: rgba(0, 0, 0, 0.452);
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
 }
-.hero-des{
 
+.hero-title {
+    font-size: 4.5rem;
 }
 
+.hero-subtitle {
+    font-size: 2.5rem;
+}
+
+
+/* the animation  */
+
+
+
+
+/*----------------------- about ---------------*/
