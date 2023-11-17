@@ -1,9 +1,18 @@
 /* navbar */
+
+.sec-pt5{
+    padding-top: 5rem;
+}
+.sec-padding{
+    padding-inline: 3rem;
+    padding-block: 4.5rem;
+}
 .navbar {
     padding: 20px 0;
     background-color: black;
     position: fixed;
-    width: 100%
+    width: 100%;
+    z-index:99;
 }
 
 .animation,
@@ -18,7 +27,9 @@
     font-weight: 600;
     letter-spacing: 1px;
 }
-
+.ico-circle::before{
+    content: '\f224';
+}
 .navbar-brand:hover,
 .nav-link:hover {
     color: #fff;
@@ -118,3 +129,36 @@
 
 
 /*----------------------- about ---------------*/
+.about-info p{
+display: flex;
+width: 100%;
+align-items: baseline;
+
+}
+.title-s{
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 1.1rem;
+}
+.skill-mf .progress {
+    background-color: #cde1f8;
+    margin: 0.5rem 0 1.2rem 0;
+    border-radius: 0;
+    height: 0.7rem;
+}
+.title-box-2{
+    margin-bottom: 3rem;
+}
+.title-left{
+    font-size: 2rem;
+    position: relative;
+    
+}
+.title-left:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+}
