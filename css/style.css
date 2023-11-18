@@ -1,3 +1,5 @@
+body {
+    background-color: #f5f5f5;}
 /* navbar */
 
 .sec-pt5{
@@ -6,6 +8,15 @@
 .sec-padding{
     padding-inline: 3rem;
     padding-block: 4.5rem;
+}
+.bg-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+.position-relative {
+    position: relative!important;
 }
 .navbar {
     padding: 20px 0;
@@ -26,9 +37,6 @@
     padding: 0;
     font-weight: 600;
     letter-spacing: 1px;
-}
-.ico-circle::before{
-    content: '\f224';
 }
 .navbar-brand:hover,
 .nav-link:hover {
@@ -98,9 +106,7 @@
 #hero {
     height: 100vh;
     background-image: url('/images/hero-bg.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+
     padding: 0 !important;
 }
 
@@ -162,3 +168,102 @@ align-items: baseline;
     width: 100px;
     bottom: -12px;
 }
+
+/* services */
+
+.title-a{
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.subtitle-a {
+    text-decoration: none;
+    color: #4e4e4e;
+}
+
+.line-mf {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+.title-box {
+    margin-bottom: 4rem;
+}
+.service-box {
+    background-color: #fff;
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+
+}
+.service-box .service-ico {
+    margin-bottom: 1rem;
+    color: #1e1e1e;
+}
+.service-box .ico-circle {
+    transition: all 500ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.ico-circle {
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;
+    display: block;
+}
+.service-box:hover .ico-circle {
+    transition: all 500ms ease;
+    color: #fff;
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+/* section counter */
+
+.section-counter{
+    background-image: url('/images/counters-bg.jpg');
+
+}
+.paralax-mf {
+    position: relative;
+    padding: 8rem 0;
+}
+.overlay-mf {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+.overlay-mf {
+    background-color: #0078ff;
+}
+.counter-box {
+    color: #fff;
+    text-align: center;
+}
+.counter-ico {
+    margin-bottom: 1rem;
+}
+.counter-ico .ico-circle {
+    height: 60px;
+    width: 60px;
+    line-height: 1.5;
+    box-shadow: 0 0 0 10px #cde1f8;
+    line-height: 1.5 !important;
+}
+
