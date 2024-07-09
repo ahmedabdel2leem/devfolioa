@@ -313,7 +313,7 @@ body {
 /* hero section */
 #hero {
     height: 100vh;
-    background-image: url('/images/hero-bg.jpg');
+    background-image: url('../images/hero-bg.jpg');
 
     padding: 0 !important;
 }
