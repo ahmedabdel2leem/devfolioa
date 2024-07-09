@@ -332,8 +332,10 @@ body {
     font-size: 4.5rem;
 }
 
-.hero-subtitle {
+.hero-subtitle a {
     font-size: 2.5rem;
+    color: #fff;
+  cursor: unset;
 }
 
 
@@ -348,6 +350,10 @@ body {
     width: 100%;
     align-items: baseline;
 
+}
+.rounded-3{
+  width: 100%;
+  height: auto;
 }
 
 .title-s {
@@ -536,7 +542,37 @@ body {
 
 
 /* testmonial */
+#owl-demo {
+  background-image: linear-gradient(to top, rgba(0, 119, 255, 0.592), rgba(0, 119, 255, 0.559)), url(../images/overlay-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 150px;
+}
 
+#owl-demo .item {
+  margin: 3px;
+}
+
+#owl-demo .item img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+#owl-demo .sub-content {
+  color: white;
+  margin-top: 15px;
+}
+
+#owl-demo .sub-content h3 {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+#owl-demo .sub-content p {
+  font-size: 20px;
+  font-weight: 300;
+}
 
 /* blog */
 
@@ -695,7 +731,7 @@ a {
     width: 40px;
     font-size: 1.2rem;
     border-radius: 50%;
-    line-height: 1.6;
+    line-height: 2;
     margin: 0 15px 0 0;
     box-shadow: 0 0 0 3px #0078ff;
     transition: all 500ms ease;
@@ -705,7 +741,7 @@ a {
     width: 40px;
     font-size: 1.2rem;
     border-radius: 50%;
-    line-height: 1.6;
+    line-height: 2s;
     margin: 0 15px 0 0;
     box-shadow: 0 0 0 3px #0078ff;
     transition: all 500ms ease;

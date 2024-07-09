@@ -9,6 +9,7 @@
   <!-- bootstrab icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
   <!-- main css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -59,7 +60,9 @@
       <div class="row hero-descraption">
         <div class="container">
           <h1 class="hero-title">I am Morgan Freeman</h1>
-          <p class="hero-subtitle">Photographe|</p>
+          <p class="hero-subtitle"> <a href="" class="typewrite" data-period="2000" data-type='[ "Freelancer", "Photographer", "De", "I Love to Develop." ]'>
+            <span class="wrap"></span>
+          </a></p>
         </div>
       </div>
     </div>
@@ -75,7 +78,7 @@
               <div class="col-sm-6 col-md-5 about-img">
                 <img class="rounded-3" src="images/testimonial-2.jpg" alt="" />
               </div>
-              <div class="col-sm-6 col-md-7 o about-info">
+              <div class="col-sm-6 col-md-12 col-lg-7  about-info">
                 <p>
                   <span class="title-s">Name: </span>
                   <span>Morgan Freeman</span>
@@ -497,7 +500,26 @@
     </section>
 
     <!------------------------ testmonial ---------------->
-    <!-- ---------------------------------------------- -->
+    <section id="Testimonial" class="testimonial text-center">
+      <div id="owl-demo" class="owl-carousel owl-theme d-flex justify-content-center align-items-center">
+          <div class="content">
+              <div class="item"><img src="images/testimonial-2.jpg" class="rounded-circle mx-auto" alt="Owl Image"></div>
+              <div class="sub-content">
+                  <h3>Xavi Alonso</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque illum ad fugiat unde modi? Praesentium, suscipit a!</p>
+              </div>
+          </div>
+          <div class="content">
+              <div class="item"><img src="images/testimonial-4.jpg" class="rounded-circle mx-auto" alt="Owl Image"></div>
+              <div class="sub-content">
+                  <h3>Marta Socrate</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque illum ad fugiat unde modi? Praesentium, suscipit a!</p>
+              </div>
+          </div>
+
+      </div>
+      </section>
+
 
     <!-- ----------------blog------------- -->
     <section id="blog" class="blog-mf sect-pt5 sec-padding">
@@ -716,6 +738,20 @@
     </div>
   </footer>
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function() {
+
+            $("#owl-demo").owlCarousel({
+                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                items: 1,
+
+            });
+
+        });
+    </script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
